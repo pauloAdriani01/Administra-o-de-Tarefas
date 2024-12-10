@@ -1,0 +1,5 @@
+footer {
+    position: absolute; /* A posição é definida de acordo com as propriedades de top, bottom, right ou left */
+    bottom: 0;
+    width: 100%;
+}

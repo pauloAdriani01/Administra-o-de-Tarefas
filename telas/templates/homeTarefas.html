@@ -12,9 +12,9 @@
      <link rel="stylesheet" href="{% static 'css/homeTarefas.css' %}">
 </head>
 
-<body>
+<body style="background-color: #AEB2B6;">
     <header class="mb-4"> <!-- Adicona um espaço abaixo do header para o restante do conteúdo (mb-4 = margin-bottom: 4)-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"> <!-- navbar dá o estilo padrão das navs do bootstrap; navbar-expand-lg deixa o comprimento máximo em telas grandes, faz colapsar em um hámburguer em telas menores (precisa ser configurado); bg-body-tertiary um estilo predeinido de cores do bootstrap-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- navbar dá o estilo padrão das navs do bootstrap; navbar-expand-lg deixa o comprimento máximo em telas grandes, faz colapsar em um hámburguer em telas menores (precisa ser configurado); navbar-dark bg-dark um estilo predeinido de cores do bootstrap-->
             <div class="container-fluid"> <!-- container-fluid deixa a nav ficar no espaço todo, deixando mais responsivo-->
                 <span class="navbar bg-body-tertiary me-3">Minhas Tarefas</span> <!-- navbar deixa o span alinhado com o restante da nav-->
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup"> <!-- collapse navbar-collapse faz o elemento colapsar em telas menores (se for devidamente condigurado); navbarNavAltMarkup um identificador para um div que colapsa se conectar a um botão (se configurado) via outros identificadores-->
@@ -31,11 +31,18 @@
                 <h1 class="h1 mb-0 me-4">Minhas Tarefas</h1> <!-- mb-0 remover a margem inferior do título; me-3 adiciona um espaçamento entre os elementos (margin-end: 3)-->
                 <button id="botaoAdicionar" class="btn btn-block btn-primary">Nova Tarefa</button> <!-- btn é o estilo padrão dos botões do bootstrap; btn-block deixa o botão ficar no espaçamento máximo de seu conatiner; btn-primary é um estilo padrão do bootstrap-->
             </div>
-            <div id="containerTexto" class="d-flex flex-column align-items-center justify-content-center"></div>
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div id="containerTexto" class="d-flex flex-column align-items-center justify-content-center"></div>
+                    <div id="containerDeleta" class="d-flex"></div>
+                </div>
+            </div>
         </div>
     </main>
-    <footer class="bg-body-tertiary">
-        <p class="d-flex"><small>Copyright &copy; 2024 Paulo Henrique Santos Adriani</small></p>
+    <footer class="bg-body-tertiary text-white">
+        <div class="d-flex" style="background-color: #212529;">
+            <p class="mt-3 ms-3"><small>Copyright &copy; Paulo Henrique Santos Adriani</small></p>
+        </div>
     </footer>
     <script src="{% static 'js/homeTarefas.js' %}"></script>
 </body>

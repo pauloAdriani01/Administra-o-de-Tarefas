@@ -1,5 +1,10 @@
-footer {
-    position: fixed; /* A posição é definida de acordo com as propriedades de top, bottom, right ou left */
-    bottom: 0;
-    width: 100%;
+html, body {
+    height: 100%; /* Deixa o body ocupar toda a tela para não haver problemas com nada quando mais elementos forem adicionados*/
+    margin: 0; /* Remove qualquer margem padrão que o navegador possa colocar */
+    display: flex; /* Deixa o body flexível para poder organizar seus child em linhas ou colunas */
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Main cresce e ocupa todo o seu espaço disponível no body */
 }
